@@ -1,0 +1,179 @@
+#intro .jumbotron{
+    height: 70vh;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+/******************* nav *************/
+
+.nav{
+    background-color: white;
+    /* position: fixed; */
+}
+
+
+.container .navbar{
+    padding-top: 0;
+    padding-bottom: 0;
+   /* background-color: white; */
+}
+
+.container-fluid{
+    background-color: white;
+    float: right;
+}
+
+.container-fluid .collapse .nav-item a{
+    color: black;
+}
+
+.container-fluid .collapse .nav-item a:hover{
+    color: #0d6efd;
+}
+
+.container-fluid .navbar-collapse{
+    flex-grow: 0;
+}
+
+.container-fluid .collapse .nav-item .dropdown-menu a{
+    color: black;
+}
+
+.container-fluid .collapse .nav-item .dropdown-menu a:hover{
+    color: #0d6efd;
+}
+
+.container button.navbar-toggler{
+    background-color: white;
+}
+
+/******************* banner *************/
+.carousel-dark{
+    /* margin-top: 10px; */
+}
+
+.carousel-item img{
+    opacity: .7;
+}
+
+.carousel-item h5 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* .carousel-item h5 button a:hover{
+    color: #FF9800;
+    transform: translateY(-38%);
+} */
+
+.carousel-item p{
+    color: white;
+}
+
+/******************* card *************/
+
+.row{
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+.row .col{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* border: 1px solid #212020; */
+}
+
+.row .col a{
+    text-decoration: none;
+    color: #212020;
+}
+
+.card{
+    width: 80%;
+    opacity: .9;
+}
+
+.card:hover{
+    opacity: 1.8;
+}
+
+
+.col .text-muted{
+    float: right;
+}
+
+
+/******************* card end *****************/
+
+.featurette .col-md-7{
+   /* border: 1px solid blue; */
+   align-self: center;
+}
+
+.featurette-heading{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.lead{
+    text-align: center;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+
+
+
+.img-fluid img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/************* footer *****************/
+
+.container ul li a i{
+    color: #212020;
+}
+
+  /* About Us----------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+.slider{
+    margin: 100px auto;
+    padding: 20px;
+}
+
+
+
+.arrow{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 8;
+}

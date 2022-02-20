@@ -1,0 +1,25 @@
+.py-5{
+    margin: -40px;
+    /* border: 1px solid red; */
+}
+
+
+.container{
+    margin: 0 auto;
+
+}
+
+.card{
+    width: 100%;
+    opacity: 1;
+}
+
+.shadow-sm{
+    padding: 20px;
+}
+
+.shadow-sm img{
+    width: 100%;
+    height: auto;
+}
+

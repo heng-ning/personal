@@ -1,0 +1,30 @@
+
+
+.carousel-item img{
+    opacity: 1;
+}
+
+.carousel-item img{
+    margin-top: 100px;
+}
+
+
+
+.container .row h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .row img{
+    margin-bottom: 30px;
+}
+
+.text-center{
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.card{
+    
+    margin-bottom: 10px;
+}

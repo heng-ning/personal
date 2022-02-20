@@ -1,0 +1,29 @@
+
+.row .col{
+    display: flex;
+   padding-bottom: 50px;
+   padding-top: 50px;
+}
+
+.btn-primary{
+    background-color: white;
+    color: #0d6efd;
+    
+}
+
+.card{
+    border: 1px solid #0d6efd;
+}
+
+.card-header{
+    background-color: #0d6efd;
+}
+
+.card-header h4{
+    color: white;
+}
+
+.required{
+    color: red;
+}
+

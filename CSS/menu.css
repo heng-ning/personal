@@ -1,0 +1,29 @@
+.text-center{
+    margin: 0 auto;
+}
+
+
+.card{
+    opacity: 1;
+    /* width: 300px; */
+}
+
+img.card-img-top{
+    width: 90%;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-top: 30px;
+
+}
+
+.row{
+    margin-left: calc(var(--bs-gutter-x) * 1.5);
+}
+
+
+.row .col{
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+
