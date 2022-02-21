@@ -16,12 +16,20 @@
     /* flex-wrap: nowrap; */
 }
 
+.container-fluid{
+    /* position: relative; */
+}
+
 .container-fluid button.navbar-toggler{
     /* float: right; */
+    /* position: absolute;
+    top: 60px;
+    right: 0; */
 }
 
 .navbar-brand img{
     /* width: 70%; */
+    
 }
 
 .container .navbar{

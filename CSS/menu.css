@@ -6,6 +6,7 @@
 .card{
     opacity: 1;
     margin: 0 auto;
+    width: 80%;
 }
 
 img.card-img-top{
