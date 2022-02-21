@@ -11,6 +11,9 @@
     background-color: white;
 }
 
+.navbar-brand img{
+    width: 80%;
+}
 
 .container .navbar{
     padding-top: 0;

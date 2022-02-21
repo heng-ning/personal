@@ -1,38 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style type="text/css">
-	*{padding:0;margin: 0;}
-		.pn{width:400px; margin: 200px auto 0; background-color: #ddd; text-align: center;padding:0 100px;}
-		
-		.slide a{display: block;width: 100px;height: 30px;line-height:30px; text-align:center;margin:0 auto;background-color: #f00; text-decoration: none;color:#fff;}
-	</style>
+<title></title>
+<meta charset="gb2312" />
+<style type="text/css">
+body{
+background-color:pink;
+}
+#div{
+/*border:1px solid green;*/
+margin:40px auto;
+width:900px;
+}
+#ul li{
+float:left;
+margin-right:10px;
+list-style-type:none;
+}
+p{
+background-color:silver;
+width:50%;
+margin:0 auto;
+top:10px;
+text-align:center;
+}
+#divShow{
+/*border:1px solid red;*/
+width:640px;
+height:400px;
+margin:10px auto;
+clear:both;
+}
+</style>
 </head>
-
 <body>
-	<div class="pn">
-		<p>简介</p>
-		<p>女娃</p>
-		<div class="hpn" id="mm" style="display:none;">
-			<p>特点：人长得很特很特点</p>
-			<p>爱好：看电影睡觉爬山</p>
-		</div>
-	</div>
-	<p class="slide"><a href="javascript:showdiv();" id="strhref" class="btn-show">展开</a></p>
-	<script type="text/javascript">
-		function showdiv(){
-			document.getElementById('mm').style.display = 'block';
-			document.getElementById('strhref').innerHTML="收起";
-			document.getElementById('strhref').href="javascript:hidediv()";
-		}
-		function hidediv(){
-			document.getElementById('mm').style.display = 'none';
-			document.getElementById('strhref').innerHTML="展开";
-			document.getElementById('strhref').href="javascript:showdiv()";
- 
-		}
-	</script>
+<div id="div">
+<ul id="ul">
+<li>
+<a href="imgs/0.jpg">
+<img src="imgs_small/0.jpg" title="圖片111"></img>
+</a>
+</li>
+<li>
+<a href="imgs/1.jpg">
+<img src="imgs_small/1.jpg" title="圖片222"></img>
+</a>
+</li>
+<li>
+<a href="imgs/2.jpg">
+<img src="imgs_small/2.jpg" title="圖片333"></img>
+</a>
+</li>
+<li>
+<a href="imgs/6.jpg">
+<img src="imgs_small/6.jpg" title="圖片444"></img>
+</a>
+</li>
+<li>
+<a href="imgs/4.jpg">
+<img src="imgs_small/4.jpg" title="圖片555"></img>
+</a>
+</li>
+</ul>
+</div>
+<script type="text/javascript">
+    //建立一個div節點
+    var divShow = document.createElement("div");
+    //設定div的id屬性
+    divShow.setAttribute("id","divShow");
+    //建立一個img節點
+    var img = document.createElement("img");
+    //設定img的id屬性
+    img.setAttribute("id","img");
+    //設定img的src屬性
+    img.setAttribute("src","imgs/face.jpg");
+    //將img節點新增到div下
+    divShow.appendChild(img);
+    //建立文字說明標籤p
+    var p = document.createElement("p");
+    p.setAttribute("id","p");
+    p.appendChild(document.createTextNode("說明"));
+    
+    //得到HTML中的body節點
+    var body = document.getElementsByTagName("body")[0];
+    //將div新增到body節點下
+    body.appendChild(divShow);
+    body.appendChild(p);//把p新增到body下
+    
+    
+    //為元素新增單擊事件
+    //節點物件.事件名 = new function(){};
+    
+    //得到所有的<a>標籤
+    var alist = document.getElementById("div").getElementsByTagName("a");
+    
+    for(var i = 0;i < alist.length; i++){
+    //當滑鼠點選時切換圖片
+    alist[i].onclick = function(){
+    //this就表示當前被點選的節點
+    //點誰獲得誰的href和title的值
+    var href = this.getAttribute("href");
+    var img = this.getElementsByTagName("img")[0];
+    var title = img.getAttribute("title");
+    
+    //修改img標籤的src屬性
+    var img = document.getElementById("img");
+    img.setAttribute("src",href);
+    
+    //修改p標籤的文字
+    var p = document.getElementById("p");
+    p.firstChild.nodeValue=title;
+    
+    //取消<a>標籤的跳轉
+    return false;
+    }
+    
+    //當滑鼠稱上去的時候切換圖片
+    alist[i].onmousemove = function(){
+    //this就表示當前被點選的節點
+    //點誰獲得誰的href和title的值
+    var href = this.getAttribute("href");
+    var img = this.getElementsByTagName("img")[0];
+    var title = img.getAttribute("title");
+    
+    //修改img標籤的src屬性
+    var img = document.getElementById("img");
+    img.setAttribute("src",href);
+    
+    //修改p標籤的文字
+    var p = document.getElementById("p");
+    p.firstChild.nodeValue=title;
+    
+    //取消<a>標籤的跳轉
+    return false;
+    }
+    }
+    </script>
+    
 </body>
 </html>
