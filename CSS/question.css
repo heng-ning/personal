@@ -1,7 +1,12 @@
 .accordion{
-   /* margin-top: 50px; */
-   margin-bottom: 100px;
+   width: 60%;
+   margin: 0 auto;
 }
+
+.py-5{
+    margin-top: 50px;
+}
+
 
 .carousel-item img{
     opacity: 1;
