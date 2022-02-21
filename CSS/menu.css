@@ -5,7 +5,7 @@
 
 .card{
     opacity: 1;
-    /* width: 300px; */
+    margin: 0 auto;
 }
 
 img.card-img-top{
@@ -17,13 +17,13 @@ img.card-img-top{
 }
 
 .row{
-    margin-left: calc(var(--bs-gutter-x) * 1.5);
+    margin-left: 0;
 }
 
 
 .row .col{
     padding-top: 0;
     padding-bottom: 20px;
-    
+    /* border: 1px solid black; */
 }
 
