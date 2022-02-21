@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{padding:0;margin: 0;}
+		.pn{width:400px; margin: 200px auto 0; background-color: #ddd; text-align: center;padding:0 100px;}
+		
+		.slide a{display: block;width: 100px;height: 30px;line-height:30px; text-align:center;margin:0 auto;background-color: #f00; text-decoration: none;color:#fff;}
+	</style>
+</head>
+
+<body>
+	<div class="pn">
+		<p>简介</p>
+		<p>女娃</p>
+		<div class="hpn" id="mm" style="display:none;">
+			<p>特点：人长得很特很特点</p>
+			<p>爱好：看电影睡觉爬山</p>
+		</div>
+	</div>
+	<p class="slide"><a href="javascript:showdiv();" id="strhref" class="btn-show">展开</a></p>
+	<script type="text/javascript">
+		function showdiv(){
+			document.getElementById('mm').style.display = 'block';
+			document.getElementById('strhref').innerHTML="收起";
+			document.getElementById('strhref').href="javascript:hidediv()";
+		}
+		function hidediv(){
+			document.getElementById('mm').style.display = 'none';
+			document.getElementById('strhref').innerHTML="展开";
+			document.getElementById('strhref').href="javascript:showdiv()";
+ 
+		}
+	</script>
+</body>
+</html>

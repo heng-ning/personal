@@ -1,18 +1,15 @@
-$(window).load(function() {
-    $('.flexslider').flexslider({
-      animation: "slide",
-      animationLoop: false,
-      itemWidth: 210,
-      itemMargin: 5,
-      mousewheel: true,
-      rtl: true
-    });
-  });
 
-// $(function() { 
-//     $(".flexslider").flexslider({
-//         animation: "slide"
-//     }
-        
-//     ); 
-//   }); 
+
+
+//News 詳情
+function showdiv(){
+  document.getElementById('news').style.display = 'block';
+  document.getElementById('strhref').innerHTML="-";
+  document.getElementById('strhref').href="javascript:hidediv()";
+}
+function hidediv(){
+  document.getElementById('news').style.display = 'none';
+  document.getElementById('strhref').innerHTML="+";
+  document.getElementById('strhref').href="javascript:showdiv()";
+
+}
