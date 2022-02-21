@@ -11,8 +11,18 @@
     background-color: white;
 }
 
+
+.navbar{
+    flex-wrap: nowrap;
+}
+
+.container-fluid button.navbar-toggler{
+    float: right;
+    /* border: 1px solid rebeccapurple; */
+}
+
 .navbar-brand img{
-    width: 80%;
+    width: 70%;
 }
 
 .container .navbar{
