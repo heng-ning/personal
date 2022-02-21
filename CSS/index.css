@@ -13,16 +13,15 @@
 
 
 .navbar{
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
 }
 
 .container-fluid button.navbar-toggler{
-    float: right;
-    /* border: 1px solid rebeccapurple; */
+    /* float: right; */
 }
 
 .navbar-brand img{
-    width: 70%;
+    /* width: 70%; */
 }
 
 .container .navbar{
@@ -98,9 +97,11 @@
 }
 
 .card{
-    width: 80%;
+    width: 100%;
     opacity: .9;
 }
+
+
 
 .card:hover{
     opacity: 1.8;
