@@ -3,7 +3,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -78,8 +78,8 @@ body {
 
 
 .row .col{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 0px;
+    padding-bottom: 50px;
     /* border: 1px solid #212020; */
 }
 
