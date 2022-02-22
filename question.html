@@ -220,14 +220,6 @@
                     </div>
                   </div>
       
-                  <!-- <div class="col-12">
-                    <label for="address" class="form-label">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                    <div class="invalid-feedback">
-                      Please enter your shipping address.
-                    </div>
-                  </div> -->
-      
                   <div class="col-12">
                     <label for="address2" class="form-label">Line ID<span class="text-muted">(Optional)</span></label>
                     <input type="text" class="form-control" id="address2" placeholder="">
@@ -272,36 +264,51 @@
                     </div>
                   </div>
                    
-                  
-                  <!-- <div class="col-12">
-                    <label for="address" class="form-label">遇到的問題? 
-                    </label>
-                    <span class="required">*</span>
-                    <div class="invalid-feedback">
-                      Please enter your shipping address.
-                    </div>
-                  </div>
-                  <textarea cols="50" rows="5"></textarea> -->
-                  
-           
-                 
-      
+     
                 <hr class="my-4">
       
-               
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" id="save-info">
                   <label class="form-check-label" for="save-info">訂閱優惠報</label>
                 </div>
       
                 <hr class="my-4">
-      
-                
+
                 <button class="w-100 btn btn-primary btn-lg" type="submit">Send</button>
+                
+                  <script>
+                    (function () {
+                        'use strict'
+                      
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.querySelectorAll('.needs-validation')
+                      
+                        // Loop over them and prevent submission
+                        Array.prototype.slice.call(forms)
+                          .forEach(function (form) {
+                            form.addEventListener('submit', function (event) {
+                              if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                              }
+                      
+                              form.classList.add('was-validated')
+                            }, false)
+                          })
+                      })()
+      
+                </script>
+                
               </form>
             </div>
+
+
+
+
           </div>
         </main>
+
+        
 
 <!------------------------ contact ----------------------------------->
 
@@ -330,6 +337,7 @@
   </footer>
 
 </div>
+
 
 
 

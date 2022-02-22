@@ -24,8 +24,6 @@
 
 
 
-
-
 .container .row h2{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -41,6 +39,11 @@
 }
 
 .card{
-    
     margin-bottom: 10px;
 }
+
+
+.row{
+    padding-bottom: 50px;
+}
+

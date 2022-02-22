@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" type="text/css" href='slick/slick.css'>
-    <link rel="stylesheet" href='slick/slick-theme.css'>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href='CSS/sales.css'>
-    <script src="https://kit.fontawesome.com/ab6dc4373d.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" type="text/css" href='slick/slick.css'>
+  <link rel="stylesheet" href='slick/slick-theme.css'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href='CSS/question.css'>
+  <script src="https://kit.fontawesome.com/ab6dc4373d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <title>Payment</title>
     <style type="text/css">
         .jumbotron {
@@ -104,9 +104,9 @@
                 <li class="list-group-item d-flex justify-content-between lh-sm">
                   <div>
                     <h6 class="my-0">week</h6>
-                    <small class="text-muted">Brief description</small>
+                    <small class="text-muted">7天份</small>
                   </div>
-                  <span class="text-muted">$999</span>
+                  <span class="text-muted">$1500</span>
                 </li>
              
                 <li class="list-group-item d-flex justify-content-between bg-light">
@@ -118,7 +118,7 @@
                 </li>
                 <li class="list-group-item d-flex justify-content-between">
                   <span>Total (NT)</span>
-                  <strong>$899</strong>
+                  <strong>$1400</strong>
                 </li>
               </ul>
       
@@ -142,16 +142,12 @@
                   </div>
       
                
-      
                   <div class="col-12">
-                    <label for="username" class="form-label">Line ID</label>
-                    <div class="input-group has-validation">
-                      <input type="text" class="form-control" id="username" placeholder="Username" required>
-                    <div class="invalid-feedback">
-                        Your username is required.
-                      </div>
-                    </div>
+                    <label for="email" class="form-label">Line ID <span class="text-muted">(Optional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="">
+                    
                   </div>
+      
       
                   <div class="col-12">
                     <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
@@ -171,7 +167,10 @@
       
                   <div class="col-12">
                     <label for="address2" class="form-label">Phone <span class="text-muted"></span></label>
-                    <input type="text" class="form-control" id="address2" placeholder="09xx-xxx-xxx">
+                    <input type="text" class="form-control" id="address2" placeholder="09xx-xxx-xxx" required>
+                    <div class="invalid-feedback">
+                      Please enter your shipping address.
+                    </div>
                   </div>
       
                   <div class="col-md-6">
@@ -315,6 +314,28 @@
                 <hr class="my-4">
       
                 <button class="w-100 btn btn-primary btn-lg" type="submit">結帳</button>
+                <script>
+                  (function () {
+                      'use strict'
+                    
+                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                      var forms = document.querySelectorAll('.needs-validation')
+                    
+                      // Loop over them and prevent submission
+                      Array.prototype.slice.call(forms)
+                        .forEach(function (form) {
+                          form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                              event.preventDefault()
+                              event.stopPropagation()
+                            }
+                    
+                            form.classList.add('was-validated')
+                          }, false)
+                        })
+                    })()
+    
+              </script>
               </form>
             </div>
           </div>
@@ -352,13 +373,15 @@
        
        </div>
    
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>AOS.init();</script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script src='slick-1.8.1/slick/slick.min.js'></script>
-      <script src='js/jquery.min.js'></script>
-      <script src="js/index.js"></script>
+
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>AOS.init();</script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+       <script src='slick-1.8.1/slick/slick.min.js'></script>
+       <script src='js/jquery.min.js'></script>
+       <script src="js/index.js"></script>
   
    </body>
    </html>

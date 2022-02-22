@@ -9,6 +9,10 @@
     width: 80%;
 }
 
+.card  a{
+    padding-top: 20px;
+}
+
 img.card-img-top{
     width: 90%;
     margin: 0 auto;
