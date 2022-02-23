@@ -19,6 +19,7 @@ body{
     font-size: 14px;
 }
 
+
 .container .navbar{
     padding-top: 0;
     padding-bottom: 0;
@@ -53,6 +54,9 @@ body{
     background-color: white;
 }
 
+
+
+
 /******************* banner *************/
 
 .carousel-item img{
@@ -69,7 +73,6 @@ body{
 .carousel-item p{
     color: white;
 }
-
 
 
 /******************* card *************/
