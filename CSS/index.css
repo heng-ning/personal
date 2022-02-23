@@ -11,6 +11,9 @@
     background-color: white;
 }
 
+.nav-item{
+    font-size: 14px;
+}
 
 .navbar{
     /* flex-wrap: nowrap; */
