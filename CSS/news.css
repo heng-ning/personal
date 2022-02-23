@@ -14,22 +14,22 @@
     opacity: 1;
 }
 
-.card-text{
-    /* overflow:hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    white-space: normal; */
-}
-
 .shadow-sm{
     padding: 20px;
+    
 }
 
 .shadow-sm img{
     width: 100%;
     height: auto;
+}
+
+.hidetogglebtn{
+    margin-bottom: 10px;
+    float: right;
+}
+
+.small{
+    float: left;
 }
 
