@@ -1,31 +1,3 @@
-.accordion{
-   width: 60%;
-   margin: 0 auto;
-}
-
-.py-5{
-    margin-top: 50px;
-}
-
-
-.carousel-item img{
-    opacity: 1;
- }
-
-
-.img-fluid img{
-    max-width: 100%;
-    height: auto;
-}
-
-.accordion-button {
-    text-align: center;
-}
-
-.badge{
-    background-color: black;
-}
-
 .text-muted a{
     font-size: 13px;
     color: black;

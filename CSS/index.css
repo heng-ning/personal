@@ -2,12 +2,6 @@ body,button, input,select, textarea,h1 ,h2, h3, h4, h5, h6 {
     font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
 }
 
-
-
-
-
-
-
 #intro .jumbotron{
     height: 70vh;
 }
@@ -15,7 +9,6 @@ body,button, input,select, textarea,h1 ,h2, h3, h4, h5, h6 {
 body{
     overflow-x: hidden;
 }
-
 
 /******************* nav *************/
 
@@ -28,7 +21,6 @@ body{
 .nav-item{
     font-size: 14px;
 }
-
 
 .container .navbar{
     padding-top: 0;
@@ -64,9 +56,6 @@ body{
     background-color: white;
 }
 
-
-
-
 /******************* banner *************/
 
 .carousel-item img{
@@ -78,52 +67,9 @@ body{
     color: black;
 }
 
-
-
 .carousel-item p{
     color: white;
 }
-
-
-/******************* card *************/
-
-.row{
-    /* border: 1px solid red; */
-    margin: 0 auto;
-    width: 100%;
-}
-
-
-
-.row .col{
-    padding-top: 0px;
-    padding-bottom: 50px;
-    /* border: 1px solid #212020; */
-}
-
-.row .col a{
-    text-decoration: none;
-    color: #212020;
-}
-
-.card{
-    width: 100%;
-    opacity: .9;
-}
-
-
-
-.card:hover{
-    opacity: 1.8;
-}
-
-
-.col .text-muted{
-    float: right;
-}
-
-
-/******************* card end *****************/
 
 .featurette .col-md-7{
    /* border: 1px solid blue; */
@@ -141,18 +87,11 @@ body{
     line-height: 1.6;
 }
 
-.img-fluid img{
-    max-width: 100%;
-    height: auto;
-}
-
 /************* footer *****************/
 
 .container ul li a i{
     color: #212020;
 }
-
-  
 
 .slides{
     display: flex;
@@ -175,11 +114,17 @@ body{
     height: 10rem;
     /* background: #4dc7a0; */
     padding: 1rem;
-  }
-  
-  .owl-carousel .item h4 {
+}
+
+.owl-carousel .item h4 {
     color: #fff;
     font-weight: 400;
     font-size: 1.4375rem;
     margin-top: 0rem;
-  }
+}
+
+/******************* news ***********************/
+
+.hidetogglebtn{
+    float: right;
+}
