@@ -70,7 +70,7 @@ body{
 /******************* banner *************/
 
 .carousel-item img{
-    opacity: .7;
+    /* opacity: .7; */
 }
 
 .carousel-item h5 a{
