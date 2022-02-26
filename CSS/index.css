@@ -12,24 +12,8 @@ body{
 
 /******************* nav *************/
 
-.nav{
-    background-color: white;
-    /* border-bottom: 1px solid rgba(0, 0, 0, .3) ; */
-    /* border: 1px solid red; */
-}
-
 .nav-item{
     font-size: 14px;
-}
-
-.container .navbar{
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.container-fluid{
-    background-color: white;
-    float: right;
 }
 
 .container-fluid .collapse .nav-item a{
