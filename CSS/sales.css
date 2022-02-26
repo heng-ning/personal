@@ -1,13 +1,7 @@
-.row .col{
-    display: flex;
-   padding-bottom: 50px;
-   padding-top: 50px;
-}
 
 .btn-primary{
     background-color: white;
     color: #0d6efd;
-    
 }
 
 .card{
@@ -24,4 +18,9 @@
 
 .required{
     color: red;
+}
+
+.list-unstyled{
+    /* border: 1px solid red; */
+    height: 40%;
 }

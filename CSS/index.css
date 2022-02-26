@@ -58,10 +58,6 @@ body{
 
 /******************* banner *************/
 
-.carousel-item img{
-    /* opacity: .7; */
-}
-
 .carousel-item h5 a{
     text-decoration: none;
     color: black;
@@ -111,7 +107,7 @@ body{
 }
 
 .owl-theme .item {
-    height: 10rem;
+    height: 15rem;
     /* background: #4dc7a0; */
     padding: 1rem;
 }
