@@ -12,6 +12,10 @@ body{
 
 /******************* nav *************/
 
+.bg-light{
+    --bs-bg-opacity: 0;
+}
+
 .nav-item{
     font-size: 14px;
 }
