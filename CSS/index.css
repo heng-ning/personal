@@ -36,9 +36,9 @@ body{
     color: black;
 }
 
-.container-fluid .collapse .nav-item .dropdown-menu a:hover{
-    color: #0d6efd;
-}
+/* .container-fluid .collapse .nav-item .dropdown-menu a:hover{
+    color: white;
+} */
 
 .container button.navbar-toggler{
     background-color: white;
