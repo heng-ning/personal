@@ -162,57 +162,54 @@
         <div class="item"><img src='photo/index/14_工作區域 1.png' class="img-fluid" alt=""></img></div>
         <div class="item"><img src='photo/index/15_工作區域 1.png' class="img-fluid" alt=""></img></div>
         <div class="item"><img src='photo/index/16_工作區域 1.png' class="img-fluid" alt=""></img></div>
-        <div class="item"><img src='photo/index/17_工作區域 1.png' class="img-fluid" alt=""></img></div>
-        <div class="item"><img src='photo/index/12_工作區域 1.png' class="img-fluid" alt=""></img></div>
-        <div class="item"><img src='photo/index/13_工作區域 1.png' class="img-fluid" alt=""></img></div>
-        <div class="item"><img src='photo/index/14_工作區域 1.png' class="img-fluid" alt=""></img></div>
-        <div class="item"><img src='photo/index/15_工作區域 1.png' class="img-fluid" alt=""></img></div>
-        <div class="item"><img src='photo/index/16_工作區域 1.png' class="img-fluid" alt=""></img></div>
-        <div class="item"><img src='photo/index/17_工作區域 1.png' class="img-fluid" alt=""></img></div>
+        <div class="item"><img src='photo/index/17_工作區域 1.png' class="img-fluid" alt=""></img></div> 
     </div>
-
+   
     <script>
     var owl = $('.owl-carousel');
-    $('.owl-carousel').owlCarousel({
+    owl.owlCarousel({
+        // items:3,
         loop:true,
         margin:10,
-        responsiveClass:true,
+        autoplay:true,
+        autoplayTimeout:1400,
+        autoplayHoverPause:true,
         responsive:{
-            0:{
-                items:1,
-                nav:true,
-                autoplay:true,
-                autoplayTimeout:3000,
-                autoplayHoverPause:true
-            },
-            600:{
-                items:2,
-                nav:false,
-                autoplay:true,
-                autoplayTimeout:3000,
-                autoplayHoverPause:true
-            },
-            1000:{
-                items:4,
-                nav:true,
-                loop:false, 
-                autoplay:true,
-                autoplayTimeout:3000,
-                autoplayHoverPause:true
-            }
+        0:{
+            items:1,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1400,
+            autoplayHoverPause:true,
+        },
+        600:{
+            items:2,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1400,
+            autoplayHoverPause:true,
+        },
+        1000:{
+            items:4,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1400,
+            autoplayHoverPause:true,
         }
+      }
+    
+    });
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
     })
-              var owl = $('.owl-carousel');
-              owl.owlCarousel({
-                  items:4,
-                  loop:true,
-                  margin:10,
-                  autoplay:true,
-                  autoplayTimeout:1000,
-                  autoplayHoverPause:true
-              });
+    $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    })
     </script>
-
+ 
 <!-------------- footer -------------->
 
     <div class="b-example-divider"></div>
@@ -224,6 +221,7 @@
               <img src='photo/index/logo-08.png' class="bi" width="200" height=""></img>
             </a>   
           </div>
+         
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/Cozzzy_Bar-105567055255375" target="_blank"><i class="fa-brands fa-facebook-square fa-2x"></i></a></li>
             <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/cozzzy_bar/" target="_blank"><i class="fa-brands fa-instagram-square fa-2x"></i></a></li>
